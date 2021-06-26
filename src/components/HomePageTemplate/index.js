@@ -13,15 +13,17 @@ const HomePageTemplate = (props) => {
         <title>{meta_title}</title>
         <meta name='description' content={meta_description} />
       </Helmet>
-      <section className='hero is-primary is-bold is-medium'>
+      <section className='hero is-primary is-bold is-large has-background'>
+        <img className='hero-background' src='https://i.pinimg.com/originals/e0/9a/af/e09aaf94fdd25e13079fc4deae4321b5.jpg' />
         <div className='hero-body'>
           <div className='container'>
             <div className='columns'>
               <div className='column is-10 is-offset-1'>
-                <div className='section'>
+                <div className='section has-text-centered'>
                   <h1 className='title'>
                     {title}
                   </h1>
+                  <button className='button is-medium is-link'>EARLY ACCESS</button>
                 </div>
               </div>
             </div>
@@ -34,16 +36,10 @@ const HomePageTemplate = (props) => {
           <div className='section'>
             <div className='columns'>
               <div className='column is-10 is-offset-1'>
-                <div className='content'>
-                  <div>
-                    <h3 className='has-text-weight-semibold is-size-2'>
-                      {heading}
-                    </h3>
-                    <p>{description}</p>
-                  </div>
+                <div className='content has-text-centered'>
                   <Offerings gridItems={offerings.blurbs} />
-                  <h2 className='has-text-weight-semibold is-size-2'>Testimonials</h2>
-                  <Testimonials testimonials={testimonials} />
+                  {/* <h2 className='has-text-weight-semibold is-size-2'>Testimonials</h2>
+                  <Testimonials testimonials={testimonials} /> */}
                 </div>
               </div>
             </div>

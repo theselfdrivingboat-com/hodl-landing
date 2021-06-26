@@ -7,7 +7,7 @@ const Offerings = (props) => {
   return (
     <div className='columns is-multiline'>
       {gridItems.map((item, idx) => (
-        <div key={idx} className='column is-6' style={{ borderRadius: '5px' }}>
+        <div key={idx} className='column is-12' style={{ borderRadius: '5px' }}>
           <section className='section'>
             <p className='has-text-centered'>
               <ProgressiveImageContainer
@@ -15,7 +15,7 @@ const Offerings = (props) => {
                 alt={`gatsby-business-starter-${idx}`}
               />
             </p>
-            <p>{item.text}</p>
+            {/*  <p>{item.text}</p> */}
           </section>
         </div>
       ))}
