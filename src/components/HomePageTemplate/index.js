@@ -23,6 +23,9 @@ const HomePageTemplate = (props) => {
                   <h1 className='title'>
                     {title}
                   </h1>
+                  <h2 className='subtitle'>
+                    {description}
+                  </h2>
                   <button className='button is-medium is-link'>EARLY ACCESS</button>
                 </div>
               </div>

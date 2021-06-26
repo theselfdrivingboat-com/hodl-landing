@@ -1,6 +1,6 @@
 ---
 templateKey: 'home-page'
-title: SOLAR POWERED GPUs IN THE HIGH SEAS
+title: HODL IN THE OCEAN
 meta_title: Home | Gatsby Starter Business
 meta_description: >-
   Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
@@ -8,12 +8,12 @@ meta_description: >-
   venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis
   consectetur purus sit amet fermentum.
 heading: Lorem ipsum dolor sit amet
-description: SOLAR POWERED GPUg IN THE HIGH SEAS
+description: SOLAR POWERED GPUs IN THE HIGH SEAS
 offerings:
   blurbs:
-    - image: /img/coffee.png
+    - image: /img/hodl1.png
       text: DEPRECATED
-    - image: /img/coffee.png
+    - image: /img/hodl2.png
       text: DEPRECATED
 testimonials:
   - author: Vaibhav Sharma
