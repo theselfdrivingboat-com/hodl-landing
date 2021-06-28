@@ -26,7 +26,9 @@ const HomePageTemplate = (props) => {
                   <h2 className='subtitle is-3'>
                     {description}
                   </h2>
+	  <a href="https://docs.google.com/forms/d/e/1FAIpQLSf5a5-tKhH25EkxLizDFlX9m_bprySjY0uEE7lG4lnOfx_DtA/viewform?usp=sf_link">
                   <button className='button is-medium is-primary'>Join the Waiting List</button>
+	  </a>
                 </div>
               </div>
             </div>
@@ -79,12 +81,16 @@ const HomePageTemplate = (props) => {
                         </div>
                         <ProgressiveImageContainer
                           image='img/hodl-6.png' />
+	  <a href="https://docs.google.com/forms/d/e/1FAIpQLSf5a5-tKhH25EkxLizDFlX9m_bprySjY0uEE7lG4lnOfx_DtA/viewform?usp=sf_link">
                         <ProgressiveImageContainer
                           image='img/hodl-link-beta.png' />
+	  </a>
                         <ProgressiveImageContainer
                           image='img/hodl-8.png' />
+	  <a href="https://discord.com/invite/dUFVR9dFRZ">
                         <ProgressiveImageContainer
                           image='img/hodl-link-discord.png' />
+	  </a>
                         <ProgressiveImageContainer
                           image='img/hodl-9.png' />
                       </p>
