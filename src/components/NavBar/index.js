@@ -44,9 +44,6 @@ const NavBar = () => {
               <Link className='navbar-item' to='/pricing'>
                 CARBON FREE AI TRAINING
               </Link>
-              <Link className='navbar-item' to='/blog'>
-                CRYPTO MINING THEY CAN'T SHUT YOU DOWN
-              </Link>
               <div className='navbar-item'>
                 <div className='field is-grouped'>
                   <p className='control'>

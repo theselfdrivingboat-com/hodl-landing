@@ -1,7 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import Offerings from '../Offerings'
 import Testimonials from '../Testimonials'
+import ProgressiveImageContainer from '../ProgressiveImageContainer'
 import PropTypes from 'prop-types'
 
 const HomePageTemplate = (props) => {
@@ -14,19 +14,19 @@ const HomePageTemplate = (props) => {
         <meta name='description' content={meta_description} />
       </Helmet>
       <section className='hero is-primary is-bold is-large has-background'>
-        <img className='hero-background' src='https://i.pinimg.com/originals/e0/9a/af/e09aaf94fdd25e13079fc4deae4321b5.jpg' />
-        <div className='hero-body'>
+        <img className='hero-background' src='img/hodlhero.png' />
+        <div className='hero-body pt-6' style={{ paddingBottom: '15rem' }}>
           <div className='container'>
             <div className='columns'>
               <div className='column is-10 is-offset-1'>
-                <div className='section has-text-centered'>
-                  <h1 className='title'>
+                <div className='section pt-6 has-text-centered' style={{ paddingBottom: '15rem' }}>
+                  <h1 className='title is-1'>
                     {title}
                   </h1>
-                  <h2 className='subtitle'>
+                  <h2 className='subtitle is-3'>
                     {description}
                   </h2>
-                  <button className='button is-medium is-link'>EARLY ACCESS</button>
+                  <button className='button is-medium is-primary'>Join the Waiting List</button>
                 </div>
               </div>
             </div>
@@ -36,13 +36,60 @@ const HomePageTemplate = (props) => {
       <section className='section section--gradient'>
         <div className='container'>
 
-          <div className='section'>
+          <div className='section pt-0'>
             <div className='columns'>
               <div className='column is-10 is-offset-1'>
                 <div className='content has-text-centered'>
-                  <Offerings gridItems={offerings.blurbs} />
-                  {/* <h2 className='has-text-weight-semibold is-size-2'>Testimonials</h2>
-                  <Testimonials testimonials={testimonials} /> */}
+                  <div className='columns is-multiline'>
+                    <div className='column is-12' style={{ borderRadius: '5px' }}>
+                      <p className='has-text-centered'>
+                        <ProgressiveImageContainer
+                          image='img/hodl1.png'
+                        />
+                        <ProgressiveImageContainer
+                          image='img/hodl2.png'
+                        />
+                        <ProgressiveImageContainer
+                          image='img/hodl-drawing1.png'
+                        />
+                        <ProgressiveImageContainer
+                          image='img/hodl3.png'
+                        />
+                        <ProgressiveImageContainer
+                          image='img/hodl-link-ai1.png'
+                        />
+                        <ProgressiveImageContainer
+                          image='img/hodl4.png'
+                        />
+                        <iframe style={{ width: '100%', height: '70vh' }} src='https://www.youtube.com/embed/gl36tKSPEgM' title='YouTube video player' frameBorder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowFullScreen />
+                        <ProgressiveImageContainer
+                          image='img/hodl-7.png'
+                        />
+                        <div className='columns'>
+                          <div className='column'>
+                            <ProgressiveImageContainer
+                              image='img/hodl-alex.png'
+                            />
+                          </div>
+                          <div className='column'>
+                            <ProgressiveImageContainer
+                              image='img/hodl-oana.png'
+                            />
+                          </div>
+                        </div>
+                        <ProgressiveImageContainer
+                          image='img/hodl-6.png' />
+                        <ProgressiveImageContainer
+                          image='img/hodl-link-beta.png' />
+                        <ProgressiveImageContainer
+                          image='img/hodl-8.png' />
+                        <ProgressiveImageContainer
+                          image='img/hodl-link-discord.png' />
+                        <ProgressiveImageContainer
+                          image='img/hodl-9.png' />
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

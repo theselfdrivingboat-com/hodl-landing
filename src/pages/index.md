@@ -8,7 +8,7 @@ meta_description: >-
   venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis
   consectetur purus sit amet fermentum.
 heading: Lorem ipsum dolor sit amet
-description: SOLAR POWERED GPUs IN THE HIGH SEAS
+description: SOLAR POWERED GPUs IN INTERNATIONAL WATERS
 offerings:
   blurbs:
     - image: /img/hodl1.png
