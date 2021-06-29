@@ -41,7 +41,7 @@ const NavBar = () => {
               <Link className='navbar-item' to='/about'>
                 About
               </Link> */}
-              <Link className='navbar-item' to='/pricing'>
+              <Link className='navbar-item' to='/carbon-free-ai-training'>
                 CARBON FREE AI TRAINING
               </Link>
               <div className='navbar-item'>

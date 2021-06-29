@@ -4,7 +4,7 @@ import Testimonials from '../Testimonials'
 import ProgressiveImageContainer from '../ProgressiveImageContainer'
 import PropTypes from 'prop-types'
 
-const HomePageTemplate = (props) => {
+const CarbonFreeAiTrainingTemplate = (props) => {
   const { title, heading, description, offerings, meta_title, meta_description, testimonials } = props
 
   return (
@@ -46,56 +46,53 @@ const HomePageTemplate = (props) => {
                     <div className='column is-12' style={{ borderRadius: '5px' }}>
                       <p className='has-text-centered'>
                         <ProgressiveImageContainer
-                          image='img/hodl1.png'
+                          image='img/hodl-ai-1.png'
                         />
+                        <a href="/">
                         <ProgressiveImageContainer
-                          image='img/hodl2.png'
-                        />
-                        <ProgressiveImageContainer
-                          image='img/hodl-drawing1.png'
-                        />
-                        <ProgressiveImageContainer
-                          image='img/hodl3.png'
-                        />
-                        <a href="/carbon-free-ai-training">
-                        <ProgressiveImageContainer
-                          image='img/hodl-link-ai1.png'
+                          image='img/hodl-ai-link-1.png'
                         />
                         </a>
                         <ProgressiveImageContainer
-                          image='img/hodl4.png'
+                          image='img/hodl-ai-2.png'
                         />
-                        <iframe style={{ width: '100%', height: '70vh' }} src='https://www.youtube.com/embed/gl36tKSPEgM' title='YouTube video player' frameBorder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowFullScreen />
+                        <a href="http://www.clickclean.org/usa/en/">
                         <ProgressiveImageContainer
-                          image='img/hodl-7.png'
+                          image='img/hodl-ai-link-2.png'
                         />
-                        <div className='columns'>
-                          <div className='column'>
-                            <ProgressiveImageContainer
-                              image='img/hodl-alex.png'
-                            />
-                          </div>
-                          <div className='column'>
-                            <ProgressiveImageContainer
-                              image='img/hodl-oana.png'
-                            />
-                          </div>
-                        </div>
+                        </a>
                         <ProgressiveImageContainer
-                          image='img/hodl-6.png' />
+                          image='img/hodl-ai-3.png'
+                        />
+                        <a href="https://cloud.google.com/sustainability">
+                        <ProgressiveImageContainer
+                          image='img/hodl-ai-link-3.png'
+                        />
+                        </a>
+                        <ProgressiveImageContainer
+                          image='img/hodl-ai-4.png'
+                        />
+                        <a href="https://arxiv.org/abs/1906.02243">
+                        <ProgressiveImageContainer
+                          image='img/hodl-ai-link-4.png'
+                        />
+                        </a>
+                        <ProgressiveImageContainer
+                          image='img/hodl-ai-6.png'
+                        />
+                        <a href="https://openai.com/blog/ai-and-compute/">
+                        <progressiveimagecontainer
+                          image='img/hodl-ai-link-6.png'
+                        />
+                        </a>
+                        <ProgressiveImageContainer
+                          image='img/hodl-ai-7.png'
+                        />
+                      </p>
 	  <a href="https://docs.google.com/forms/d/e/1FAIpQLSf5a5-tKhH25EkxLizDFlX9m_bprySjY0uEE7lG4lnOfx_DtA/viewform?usp=sf_link">
                         <ProgressiveImageContainer
                           image='img/hodl-link-beta.png' />
 	  </a>
-                        <ProgressiveImageContainer
-                          image='img/hodl-8.png' />
-	  <a href="https://discord.com/invite/dUFVR9dFRZ">
-                        <ProgressiveImageContainer
-                          image='img/hodl-link-discord.png' />
-	  </a>
-                        <ProgressiveImageContainer
-                          image='img/hodl-9.png' />
-                      </p>
                     </div>
                   </div>
                 </div>
@@ -107,7 +104,7 @@ const HomePageTemplate = (props) => {
     </div>
   )
 }
-HomePageTemplate.propTypes = {
+CarbonFreeAiTrainingTemplate.propTypes = {
   title: PropTypes.string,
   meta_title: PropTypes.string,
   meta_description: PropTypes.string,
@@ -120,4 +117,4 @@ HomePageTemplate.propTypes = {
 
 }
 
-export default HomePageTemplate
+export default CarbonFreeAiTrainingTemplate
