@@ -1,7 +1,7 @@
 ---
-templateKey: pricing-page
-title: Pricing
-meta_title: Pricing | Gatsby Starter Business
+templateKey: carbon-free-ai-page
+title: CARBON FREE AI TRAINING
+meta_title: SOLAR POWERED GPUs IN THE OCEAN
 meta_description: >-
   Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
   ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam
