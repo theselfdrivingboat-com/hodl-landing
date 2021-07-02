@@ -30,12 +30,12 @@ const CarbonFreeAiTrainingTemplate = (props) => {
                   <div className='columns is-centered'>
                     <div className='column is-one-fifth'>
                       <a href='https://docs.google.com/forms/d/e/1FAIpQLSf5a5-tKhH25EkxLizDFlX9m_bprySjY0uEE7lG4lnOfx_DtA/viewform?usp=sf_link'>
-                        <button className='button is-medium is-primary'>Waiting List</button>
+                        <button className='button is-medium is-primary'>WAITING LIST</button>
                       </a>
                     </div>
                     <div className='column is-one-fifth'>
                       <a href='https://docs.google.com/forms/d/e/1FAIpQLSf5a5-tKhH25EkxLizDFlX9m_bprySjY0uEE7lG4lnOfx_DtA/viewform?usp=sf_link'>
-                        <button className='button is-medium is-primary' disabled>Developers API Docs</button>
+                        <button className='button is-medium is-primary' disabled>DEVELOPERS API DOCS</button>
                       </a>
                     </div>
                   </div>
