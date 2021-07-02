@@ -27,7 +27,7 @@ const Layout = (props) => {
             content: `width=device-width, initial-scale=1`,
           },
           {
-            name: `og:image`,
+            property: `og:image`,
             content: `https://www.hodlintheocean.com/img/hodlhero.png`,
           },
           {
