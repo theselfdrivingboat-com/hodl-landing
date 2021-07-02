@@ -66,10 +66,10 @@ const HomePageTemplate = (props) => {
                         <ProgressiveImageContainer
                           image='img/hodl3.png'
                         />
-                        <a href="/carbon-free-ai-training">
-                        <ProgressiveImageContainer
-                          image='img/hodl-link-ai1.png'
-                        />
+                        <a href='/carbon-free-ai-training'>
+                          <ProgressiveImageContainer
+                            image='img/hodl-link-ai1.png'
+                          />
                         </a>
                         <ProgressiveImageContainer
                           image='img/hodl4.png'
@@ -79,16 +79,34 @@ const HomePageTemplate = (props) => {
                           image='img/hodl-7.png'
                         />
                         <div className='columns'>
-                          <div className='column'>
-                            <ProgressiveImageContainer
-                              image='img/hodl-alex.png'
-                            />
-                          </div>
-                          <div className='column'>
-                            <ProgressiveImageContainer
-                              image='img/hodl-oana.png'
-                            />
-                          </div>
+                          <a href='https://www.lessand.ro'>
+                            <div className='column'>
+                              <ProgressiveImageContainer
+                                image='img/hodl-alex.png'
+                              />
+                            </div>
+                          </a>
+                          <a href='https://twitter.com/0xflores'>
+                            <div className='column'>
+                              <ProgressiveImageContainer
+                                image='img/hodl-oana.png'
+                              />
+                            </div>
+                          </a>
+                          <a href='https://twitter.com/sid_hypeman'>
+                            <div className='column'>
+                              <ProgressiveImageContainer
+                                image='img/hodl-siddarth.png'
+                              />
+                            </div>
+                          </a>
+                          <a href='https://www.linkedin.com/in/arwa-arif/'>
+                            <div className='column'>
+                              <ProgressiveImageContainer
+                                image='img/hodl-arwa.png'
+                              />
+                            </div>
+                          </a>
                         </div>
                         <ProgressiveImageContainer
                           image='img/hodl-6.png' />

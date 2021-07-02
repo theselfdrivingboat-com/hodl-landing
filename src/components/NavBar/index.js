@@ -50,7 +50,7 @@ const NavBar = () => {
                     <Link
                       className='button is-link is-outlined'
                       to='https://docs.google.com/forms/d/e/1FAIpQLSf5a5-tKhH25EkxLizDFlX9m_bprySjY0uEE7lG4lnOfx_DtA/viewform?usp=sf_link'>
-                      Join the Waiting list
+                      Waiting list
                     </Link>
                   </p>
                 </div>
