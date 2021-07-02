@@ -3,6 +3,7 @@ import Helmet from 'react-helmet'
 import Testimonials from '../Testimonials'
 import ProgressiveImageContainer from '../ProgressiveImageContainer'
 import PropTypes from 'prop-types'
+import { OutboundLink } from 'gatsby-plugin-amplitude-analytics'
 
 const CarbonFreeAiTrainingTemplate = (props) => {
   const { title, heading, description, offerings, meta_title, meta_description, testimonials } = props
@@ -57,11 +58,11 @@ const CarbonFreeAiTrainingTemplate = (props) => {
                         <ProgressiveImageContainer
                           image='img/hodl-ai-1.png'
                         />
-                        <a href='/about'>
+                        <OutboundLink href='/about'>
                           <ProgressiveImageContainer
                             image='img/hodl-ai-link-1.png'
                           />
-                        </a>
+                        </OutboundLink>
                         <ProgressiveImageContainer
                           image='img/hodl-ai-2.png'
                         />

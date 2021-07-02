@@ -128,9 +128,9 @@ module.exports = {
         // Specify the API key for your Amplitude Project (required)
         apiKey: 'd3fc6d85582675b261f73ee59d3595ed',
         // Puts tracking script in the head instead of the body (optional)
-        head: false,
+        head: true,
         // Prevents loading Amplitude and logging events if visitors have 'Do Not Track' enabled (optional)
-        respectDNT: true,
+        respectDNT: false,
         // Avoids sending pageview hits from custom paths (optional)
         exclude: ['/preview/**', '/do-not-track/me/too/'],
         // Override the default event types (optional)
@@ -144,8 +144,6 @@ module.exports = {
           includeUtm: true,
           includeReferrer: true,
         },
-        // Specify NODE_ENVs in which the plugin should be loaded (optional)
-        environments: ['production'],
       },
     },
     {
