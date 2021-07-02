@@ -90,7 +90,7 @@ const CarbonFreeAiTrainingTemplate = (props) => {
                           image='img/hodl-ai-6.png'
                         />
                         <a href="https://openai.com/blog/ai-and-compute/">
-                        <progressiveimagecontainer
+                        <ProgressiveImageContainer
                           image='img/hodl-ai-link-6.png'
                         />
                         </a>
@@ -102,6 +102,43 @@ const CarbonFreeAiTrainingTemplate = (props) => {
                         <ProgressiveImageContainer
                           image='img/hodl-link-beta.png' />
 	  </a>
+                        <ProgressiveImageContainer
+                          image='img/hodl4.png'
+                        />
+                        <iframe style={{ width: '100%', height: '70vh' }} src='https://www.youtube.com/embed/gl36tKSPEgM' title='YouTube video player' frameBorder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowFullScreen />
+                        <ProgressiveImageContainer
+                          image='img/hodl-7.png'
+                        />
+                        <div className='columns'>
+                          <a href='https://www.lessand.ro'>
+                            <div className='column'>
+                              <ProgressiveImageContainer
+                                image='img/hodl-alex.png'
+                              />
+                            </div>
+                          </a>
+                          <a href='https://twitter.com/0xflores'>
+                            <div className='column'>
+                              <ProgressiveImageContainer
+                                image='img/hodl-oana.png'
+                              />
+                            </div>
+                          </a>
+                          <a href='https://twitter.com/sid_hypeman'>
+                            <div className='column'>
+                              <ProgressiveImageContainer
+                                image='img/hodl-siddarth.png'
+                              />
+                            </div>
+                          </a>
+                          <a href='https://www.linkedin.com/in/arwa-arif/'>
+                            <div className='column'>
+                              <ProgressiveImageContainer
+                                image='img/hodl-arwa.png'
+                              />
+                            </div>
+                          </a>
+                        </div>
                     </div>
                   </div>
                 </div>
