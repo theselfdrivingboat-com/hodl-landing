@@ -41,8 +41,8 @@ const NavBar = () => {
               <Link className='navbar-item' to='/about'>
                 About
               </Link> */}
-              <Link className='navbar-item' to='/carbon-free-ai-training'>
-                CARBON FREE AI TRAINING
+              <Link className='navbar-item' to='/about'>
+                ABOUT HODL
               </Link>
               <div className='navbar-item'>
                 <div className='field is-grouped'>

@@ -1,27 +1,39 @@
 ---
-templateKey: 'home-page'
-title: HODL IN THE OCEAN
-meta_title: Home | Gatsby Starter Business
+templateKey: carbon-free-ai-page
+title: CARBON FREE AI TRAINING
+meta_title: SOLAR POWERED GPUs IN THE OCEAN
 meta_description: >-
   Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
   ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam
   venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis
   consectetur purus sit amet fermentum.
-heading: Lorem ipsum dolor sit amet
-description: SOLAR POWERED GPUs IN INTERNATIONAL WATERS
-offerings:
-  blurbs:
-    - image: /img/hodl1.png
-      text: DEPRECATED
-    - image: /img/hodl2.png
-      text: DEPRECATED
-testimonials:
-  - author: Vaibhav Sharma
-    quote: >-
-      Donec scelerisque magna nec condimentum porttitor. Aliquam vel diam sed diam luctus pretium. 
-      Sed quis egestas libero. Vestibulum nec venenatis ligula. 
-  - author: Subarashi San
-    quote: >-
-      Fusce porttitor vulputate enim, nec blandit magna gravida et. Etiam et dignissim ligula. 
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+pricing:
+  description: >-
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta justo justo, 
+    non semper odio cursus in. Curabitur ligula tortor, tristique non odio nec, imperdiet 
+    mattis leo. Vivamus aliquam rhoncus tortor vitae convallis. Aliquam non dui nibh. Nam 
+    a velit at enim sagittis pellentesque.
+  heading: Monthly subscriptions
+  plans:
+    - description: Nulla faucibus, leo a condimentum aliquam, libero leo vehicula arcu
+      items:
+        - Lorem ipsum dolor sit amet
+        - consectetur adipiscing elit
+        - Nunc finibus sem a sem ultrices
+      plan: Pro
+      price: '50'
+    - description: Mauris vitae dolor eu mauris malesuada cursus.
+      items:
+        - eget sagittis magna tempor
+        - Quisque pulvinar lorem molestie
+        - Proin at sagittis ex
+      plan: Enterprise
+      price: '80'
+    - description: Praesent elit lectus, iaculis vel odio vitae, bibendum auctor lacus.
+      items:
+        - Pellentesque luctus neque id mauris accumsan
+        - nec imperdiet justo eleifend
+        - Sed eget ornare orci
+      plan: Custom
+      price: '??'
 ---

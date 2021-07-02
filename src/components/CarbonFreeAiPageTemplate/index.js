@@ -57,18 +57,18 @@ const CarbonFreeAiTrainingTemplate = (props) => {
                         <ProgressiveImageContainer
                           image='img/hodl-ai-1.png'
                         />
-                        <a href="/">
-                        <ProgressiveImageContainer
-                          image='img/hodl-ai-link-1.png'
-                        />
+                        <a href='/about'>
+                          <ProgressiveImageContainer
+                            image='img/hodl-ai-link-1.png'
+                          />
                         </a>
                         <ProgressiveImageContainer
                           image='img/hodl-ai-2.png'
                         />
-                        <a href="http://www.clickclean.org/usa/en/">
-                        <ProgressiveImageContainer
-                          image='img/hodl-ai-link-2.png'
-                        />
+                        <a href='http://www.clickclean.org/usa/en/'>
+                          <ProgressiveImageContainer
+                            image='img/hodl-ai-link-2.png'
+                          />
                         </a>
                         <ProgressiveImageContainer
                           image='img/hodl-ai-3.png'

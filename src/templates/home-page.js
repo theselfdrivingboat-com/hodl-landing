@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-import HomePageTemplate from '../components/HomePageTemplate'
+import CarbonFreeAiPageTemplate from '../components/CarbonFreeAiPageTemplate'
 import Layout from '../components/Layout'
 
 const HomePage = (props) => {
@@ -9,14 +9,14 @@ const HomePage = (props) => {
 
   return (
     <Layout>
-      <HomePageTemplate
+      <CarbonFreeAiPageTemplate
         title={title}
         meta_title={meta_title}
         meta_description={meta_description}
-        heading={heading}
-        description={description}
-        offerings={offerings}
-        testimonials={testimonials}
+        heading={title}
+        description={meta_title}
+        offerings=''
+        testimonials=''
       />
     </Layout>
   )

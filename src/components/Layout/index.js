@@ -12,9 +12,12 @@ const Layout = (props) => {
         htmlAttributes={{
           lang: `en`,
           class: `has-navbar-fixed-top`,
+          xmlns: `http://www.w3.org/1999/xhtml`,
+          'xmlns:fb': `http://ogp.me/ns/fb#`,
         }}
         title={config.siteTitle}
         meta={[
+
           {
             name: `description`,
             content: config.siteDescription,
@@ -22,6 +25,10 @@ const Layout = (props) => {
           {
             name: `viewport`,
             content: `width=device-width, initial-scale=1`,
+          },
+          {
+            name: `og:image`,
+            content: `https://www.hodlintheocean.com/img/hodlhero.png`,
           },
           {
             name: `msapplication-TileColor`,

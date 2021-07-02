@@ -1,24 +1,22 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
-import { HTMLContent } from '../components/Content'
-import AboutPageTemplate from '../components/AboutPageTemplate'
+import HomePageTemplate from '../components/HomePageTemplate'
 import Layout from '../components/Layout'
 
 const AboutPage = (props) => {
-  const { data: { markdownRemark: post } } = props
+  const { data: { markdownRemark: { frontmatter: { title, meta_title, meta_description, heading, description, offerings, testimonials } } } } = props
 
   return (
     <Layout>
-      <Helmet>
-        <title>{post.frontmatter.meta_title}</title>
-        <meta name='description' content={post.frontmatter.meta_description} />
-      </Helmet>
-      <AboutPageTemplate
-        contentComponent={HTMLContent}
-        title={post.frontmatter.title}
-        content={post.html}
+      <HomePageTemplate
+        title={title}
+        meta_title={meta_title}
+        meta_description={meta_description}
+        heading={heading}
+        description={description}
+        offerings={offerings}
+        testimonials={testimonials}
       />
     </Layout>
   )
@@ -33,11 +31,29 @@ export default AboutPage
 export const aboutPageQuery = graphql`
   query AboutPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
-      html
       frontmatter {
         title
         meta_title
         meta_description
+        heading
+        description
+        offerings {
+          blurbs {
+            image {
+                childImageSharp {
+                    fluid(maxWidth: 500, quality: 72) {
+                        ...GatsbyImageSharpFluid
+                    }
+                }
+                publicURL
+            }
+            text
+          }
+        }
+        testimonials {
+          author
+          quote
+        }
       }
     }
   }
