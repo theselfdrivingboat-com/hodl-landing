@@ -59,7 +59,6 @@ const Layout = (props) => {
       />
       <NavBar />
       <>{props.children}</>
-      <Footer copyright={config.copyright} />
     </>
   )
 }
