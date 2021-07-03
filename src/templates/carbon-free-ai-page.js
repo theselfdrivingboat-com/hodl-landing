@@ -1,11 +1,17 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
-import CarbonFreeAiPageTemplate from '../components/CarbonFreeAiPageTemplate'
-import Layout from '../components/Layout'
+import React from "react";
+import PropTypes from "prop-types";
+import { graphql } from "gatsby";
+import CarbonFreeAiPageTemplate from "../components/CarbonFreeAiPageTemplate";
+import Layout from "../components/Layout";
 
 const CarbonFreeAiPage = (props) => {
-  const { data: { markdownRemark: { frontmatter: { title, meta_title, meta_description, pricing } } } } = props
+  const {
+    data: {
+      markdownRemark: {
+        frontmatter: { title, meta_title, meta_description, pricing },
+      },
+    },
+  } = props;
 
   return (
     <Layout>
@@ -15,12 +21,12 @@ const CarbonFreeAiPage = (props) => {
         meta_description={meta_description}
         heading={title}
         description={meta_title}
-        offerings=''
-        testimonials=''
+        offerings=""
+        testimonials=""
       />
     </Layout>
-  )
-}
+  );
+};
 
 CarbonFreeAiPage.propTypes = {
   data: PropTypes.shape({
@@ -28,9 +34,9 @@ CarbonFreeAiPage.propTypes = {
       frontmatter: PropTypes.object,
     }),
   }),
-}
+};
 
-export default CarbonFreeAiPage
+export default CarbonFreeAiPage;
 
 export const carbonFreeAiPageQuery = graphql`
   query CarbonFreeAiPage($id: String!) {
@@ -52,4 +58,4 @@ export const carbonFreeAiPageQuery = graphql`
       }
     }
   }
-`
+`;

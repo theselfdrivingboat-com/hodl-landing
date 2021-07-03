@@ -1,11 +1,25 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
-import HomePageTemplate from '../components/HomePageTemplate'
-import Layout from '../components/Layout'
+import React from "react";
+import PropTypes from "prop-types";
+import { graphql } from "gatsby";
+import HomePageTemplate from "../components/HomePageTemplate";
+import Layout from "../components/Layout";
 
 const AboutPage = (props) => {
-  const { data: { markdownRemark: { frontmatter: { title, meta_title, meta_description, heading, description, offerings, testimonials } } } } = props
+  const {
+    data: {
+      markdownRemark: {
+        frontmatter: {
+          title,
+          meta_title,
+          meta_description,
+          heading,
+          description,
+          offerings,
+          testimonials,
+        },
+      },
+    },
+  } = props;
 
   return (
     <Layout>
@@ -19,14 +33,14 @@ const AboutPage = (props) => {
         testimonials={testimonials}
       />
     </Layout>
-  )
-}
+  );
+};
 
 AboutPage.propTypes = {
   data: PropTypes.object.isRequired,
-}
+};
 
-export default AboutPage
+export default AboutPage;
 
 export const aboutPageQuery = graphql`
   query AboutPage($id: String!) {
@@ -40,12 +54,12 @@ export const aboutPageQuery = graphql`
         offerings {
           blurbs {
             image {
-                childImageSharp {
-                    fluid(maxWidth: 500, quality: 72) {
-                        ...GatsbyImageSharpFluid
-                    }
+              childImageSharp {
+                fluid(maxWidth: 500, quality: 72) {
+                  ...GatsbyImageSharpFluid
                 }
-                publicURL
+              }
+              publicURL
             }
             text
           }
@@ -57,4 +71,4 @@ export const aboutPageQuery = graphql`
       }
     }
   }
-`
+`;

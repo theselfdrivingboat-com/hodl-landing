@@ -1,24 +1,28 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react";
+import PropTypes from "prop-types";
 
 const Pricing = (props) => {
-  const { data } = props
+  const { data } = props;
 
   return (
-    <div className='columns'>
-      {data.map(price => (
-        <div key={price.plan} className='column' style={{ border: '1px solid #eaecee' }}>
-          <section className='section'>
-            <h4 className='has-text-centered has-text-weight-semibold'>
+    <div className="columns">
+      {data.map((price) => (
+        <div
+          key={price.plan}
+          className="column"
+          style={{ border: "1px solid #eaecee" }}
+        >
+          <section className="section">
+            <h4 className="has-text-centered has-text-weight-semibold">
               {price.plan}
             </h4>
-            <h2 className='is-size-1 has-text-weight-bold has-text-primary has-text-centered'>
+            <h2 className="is-size-1 has-text-weight-bold has-text-primary has-text-centered">
               ${price.price}
             </h2>
-            <p className='has-text-weight-semibold'>{price.description}</p>
+            <p className="has-text-weight-semibold">{price.description}</p>
             <ul>
-              {price.items.map(item => (
-                <li key={item} className='is-size-5'>
+              {price.items.map((item) => (
+                <li key={item} className="is-size-5">
                   {item}
                 </li>
               ))}
@@ -27,8 +31,8 @@ const Pricing = (props) => {
         </div>
       ))}
     </div>
-  )
-}
+  );
+};
 
 Pricing.propTypes = {
   data: PropTypes.arrayOf(
@@ -37,8 +41,8 @@ Pricing.propTypes = {
       price: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
       description: PropTypes.string,
       items: PropTypes.array,
-    }),
+    })
   ),
-}
+};
 
-export default Pricing
+export default Pricing;
