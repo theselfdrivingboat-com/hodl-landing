@@ -1,11 +1,25 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
-import AiTemplate from '../components/AiTemplate'
-import Layout from '../components/Layout'
+import React from "react";
+import PropTypes from "prop-types";
+import { graphql } from "gatsby";
+import AiTemplate from "../components/AiTemplate";
+import Layout from "../components/Layout";
 
 const AiPage = (props) => {
-  const { data: { markdownRemark: { frontmatter: { title, meta_title, meta_description, heading, description, offerings, testimonials } } } } = props
+  const {
+    data: {
+      markdownRemark: {
+        frontmatter: {
+          title,
+          meta_title,
+          meta_description,
+          heading,
+          description,
+          offerings,
+          testimonials,
+        },
+      },
+    },
+  } = props;
 
   return (
     <Layout>
@@ -19,8 +33,8 @@ const AiPage = (props) => {
         testimonials={testimonials}
       />
     </Layout>
-  )
-}
+  );
+};
 
 AiPage.propTypes = {
   data: PropTypes.shape({
@@ -28,9 +42,9 @@ AiPage.propTypes = {
       frontmatter: PropTypes.object,
     }),
   }),
-}
+};
 
-export default AiPage
+export default AiPage;
 
 export const pageQuery = graphql`
   query AiPage($id: String!) {
@@ -44,12 +58,12 @@ export const pageQuery = graphql`
         offerings {
           blurbs {
             image {
-                childImageSharp {
-                    fluid(maxWidth: 500, quality: 72) {
-                        ...GatsbyImageSharpFluid
-                    }
+              childImageSharp {
+                fluid(maxWidth: 500, quality: 72) {
+                  ...GatsbyImageSharpFluid
                 }
-                publicURL
+              }
+              publicURL
             }
             text
           }
@@ -61,4 +75,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
