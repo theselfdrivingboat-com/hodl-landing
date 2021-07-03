@@ -48,7 +48,7 @@ const CarbonFreeAiTrainingTemplate = (props) => {
                           className="button is-medium is-primary"
                           disabled
                         >
-                          DEVELOPER SDK / DOCS
+                          DEVELOPERS API DOCS
                         </button>
                       </a>
                     </div>

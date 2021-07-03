@@ -1,39 +1,44 @@
-import React from 'react'
-import { kebabCase } from 'lodash'
-import Helmet from 'react-helmet'
-import { Link, graphql } from 'gatsby'
-import Layout from '../../components/Layout'
+import React from "react";
+import { kebabCase } from "lodash";
+import Helmet from "react-helmet";
+import { Link, graphql } from "gatsby";
+import Layout from "../../components/Layout";
 
 const TagsPage = (props) => {
-  const { data: { allMarkdownRemark: { group }, site: { siteMetadata: { title } } } } = props
+  const {
+    data: {
+      allMarkdownRemark: { group },
+      site: {
+        siteMetadata: { title },
+      },
+    },
+  } = props;
 
   return (
     <Layout>
       <Helmet title={`Tags | ${title}`} />
-      <section className='hero is-primary is-bold is-medium'>
-        <div className='hero-body'>
-          <div className='container'>
-            <div className='columns'>
-              <div className='column is-10 is-offset-1'>
-                <div className='section'>
-                  <h1 className='title'>
-                    Tags
-                  </h1>
+      <section className="hero is-primary is-bold is-medium">
+        <div className="hero-body">
+          <div className="container">
+            <div className="columns">
+              <div className="column is-10 is-offset-1">
+                <div className="section">
+                  <h1 className="title">Tags</h1>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section className='section'>
-        <div className='container content'>
-          <div className='columns'>
+      <section className="section">
+        <div className="container content">
+          <div className="columns">
             <div
-              className='column is-10 is-offset-1'
-              style={{ marginBottom: '6rem' }}
+              className="column is-10 is-offset-1"
+              style={{ marginBottom: "6rem" }}
             >
-              <ul className='taglist'>
-                {group.map(tag => (
+              <ul className="taglist">
+                {group.map((tag) => (
                   <li key={tag.fieldValue}>
                     <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
                       {tag.fieldValue} ({tag.totalCount})
@@ -46,9 +51,9 @@ const TagsPage = (props) => {
         </div>
       </section>
     </Layout>
-  )
-}
-export default TagsPage
+  );
+};
+export default TagsPage;
 
 export const tagPageQuery = graphql`
   query TagsQuery {
@@ -64,4 +69,4 @@ export const tagPageQuery = graphql`
       }
     }
   }
-`
+`;
