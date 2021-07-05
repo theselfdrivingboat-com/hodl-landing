@@ -1,9 +1,9 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import '../../assets/sass/styles.sass'
-import config from '../../../config'
-import NavBar from '../NavBar'
-import Footer from '../Footer'
+import React from "react";
+import Helmet from "react-helmet";
+import "../../assets/sass/styles.sass";
+import config from "../../../config";
+import NavBar from "../NavBar";
+import Footer from "../Footer";
 
 const Layout = (props) => {
   return (
@@ -13,11 +13,10 @@ const Layout = (props) => {
           lang: `en`,
           class: `has-navbar-fixed-top`,
           xmlns: `http://www.w3.org/1999/xhtml`,
-          'xmlns:fb': `http://ogp.me/ns/fb#`,
+          "xmlns:fb": `http://ogp.me/ns/fb#`,
         }}
         title={config.siteTitle}
         meta={[
-
           {
             name: `description`,
             content: config.siteDescription,
@@ -67,7 +66,7 @@ const Layout = (props) => {
       <NavBar />
       <>{props.children}</>
     </>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
