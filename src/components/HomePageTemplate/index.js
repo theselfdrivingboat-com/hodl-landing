@@ -47,7 +47,7 @@ const HomePageTemplate = (props) => {
                           className="button is-medium is-primary"
                           disabled
                         >
-                          DEVELOPERS API DOCS
+                          DEVELOPERS SDK DOCS
                         </button>
                       </a>
                     </div>
